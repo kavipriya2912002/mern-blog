@@ -146,7 +146,7 @@ export default function CreatePost() {
           />
         )}
         <ReactQuill
-          theme='snow'
+          theme='snow"
           placeholder='Write something...'
           className='h-72 mb-12'
           required
