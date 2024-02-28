@@ -55,7 +55,7 @@ export default function DashProfile() {
     //     match /{allPaths=**} {
     //       allow read;
     //       allow write: if
-    //       request.resource.size < 2 * 1024 * 1024 &&
+    //       request.resource.size <2 *1024 *1024 &&
     //       request.resource.contentType.matches('image/.*')
     //     }
     //   }

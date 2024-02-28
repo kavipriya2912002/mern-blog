@@ -3,6 +3,8 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import userRoutes from './routes/user.route.js';
 import authRoutes from './routes/auth.route.js';
+import cors from 'cors';
+app.use(cors())
 
 dotenv.config();
 mongoose.connect(process.env.MONGO).then(()=>{
@@ -11,6 +13,7 @@ mongoose.connect(process.env.MONGO).then(()=>{
     console.log("Oops error...",err);
 })
 const app = express();
+
 
 app.use(express.json());
 
