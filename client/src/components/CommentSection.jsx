@@ -1,11 +1,11 @@
-import { Alert, Button, Modal, TextInput, Textarea } from 'flowbite-react';
+import { Alert, Button, Modal, Textarea } from 'flowbite-react';
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import Comment from './Comment';
 import { HiOutlineExclamationCircle } from 'react-icons/hi';
 
-export default function CommentSection({ postId }) {
+export default function CommentSection({postId }) {
   const { currentUser } = useSelector((state) => state.user);
   const [comment, setComment] = useState('');
   const [commentError, setCommentError] = useState(null);
